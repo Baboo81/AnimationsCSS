@@ -1,0 +1,69 @@
+body { background: #888888;margin:2%; }
+
+#SkillBox {
+    width: 100%;
+    margin: auto;
+}
+
+.Skill-Area {
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.PercentText {
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.SkillBar {
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+
+[id*="Skill-"]{
+    position: absolute;
+    height: 50px;
+
+}
+
+#Skill-HTML {
+    width: 100%;
+    background-color: #ea8564;
+    animation: Animate-HTML 4s infinite;
+}
+
+#Skill-CSS {
+    width: 70%;
+    background-color: #55a69f;
+    animation: Animate-CSS 5s infinite;
+}
+
+#Skill-JS {
+    width: 40%;
+    background-color: #99856d;
+    animation: Animate-JS 5s infinite;
+}
+
+@keyframes Animate-HTML {
+    from { width: 150px; }
+    to { width: 100% }
+}
+
+@keyframes Animate-CSS {
+    from { width: 150px; }
+    to { width: 70% }
+}
+
+@keyframes Animate-JS {
+    from { width: 150px; }
+    to { width: 40% }
+}

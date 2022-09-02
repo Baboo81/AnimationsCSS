@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+      div.un {
+        width: 200px;
+        height: 200px;
+        background: chartreuse;
+        position: relative;
+        animation: mymove1 5s infinite ease-in-out;
+      }
+
+      
+      @keyframes mymove2{
+        0%   { transform: translateY(500px) }
+        50%  {transform: translateY(0px)}
+        100% {transform: translateY(500px)}
+      }
+
+
+      @keyframes mymove1{
+        0%    { left: 0px; top:0px; }
+        25%   { left: 200px; top:0px; }
+        50%   { left: 200px; top:200px; }
+        75%   { left: 0px; top:200px; }
+        100%  { left: 0px; top:0px; }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="un"></div>
+  </body>
+
+</html>

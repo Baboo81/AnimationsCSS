@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(45, 45, 45);
+      }
+
+      .loadingCircle{
+        height: 100%;
+        width: 100%;
+      }
+      
+      .into{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      label{
+        font-size:40px;
+        color:rgb(190, 190, 190);
+        display: block;
+      }
+
+      label.step4{
+        animation:loaderLabel4Steps 3s infinite ease-in-out;
+      }
+
+      label.step3{
+        animation:loaderLabel3Steps 3s infinite ease-in-out;
+      }
+
+
+      @keyframes loaderLabel3Steps{
+        0%{
+          opacity:0;
+          transform:translateX(-300px);
+        }
+        50%{
+          opacity:1;
+          transform:translateX(0px);
+        }
+        100%{
+          opacity:0;
+          transform:translateX(300px);
+        }
+      }
+
+      @keyframes loaderLabel4Steps{
+        0%{
+          opacity:0;
+          transform:translateX(-300px);
+        }
+        33%{
+          opacity:1;
+          transform:translateX(0px);
+        }
+        66%{
+          opacity:1;
+          transform:translateX(0px);
+        }
+        100%{
+          opacity:0;
+          transform:translateX(300px);
+        }
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <div class="loadingCircle">
+      <div class="into">
+        <label class="step3">●</label>
+        <label class="step4">●</label>
+      </div>
+    </div>
+  </body>
+
+</html>
